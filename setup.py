@@ -15,11 +15,11 @@ setup(
     description="90-95% EDA Automation for Any Dataset",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/YOUR_USERNAME/auto-eda-toolkit",
+    url="https://github.com/himanshu231204/auto-eda-toolkit",
     project_urls={
-        "Bug Reports": "https://github.com/YOUR_USERNAME/auto-eda-toolkit/issues",
-        "Source": "https://github.com/YOUR_USERNAME/auto-eda-toolkit",
-        "Documentation": "https://github.com/YOUR_USERNAME/auto-eda-toolkit#readme",
+        "Bug Reports": "https://github.com/himanshu231204/auto-eda-toolkit/issues",
+        "Source": "https://github.com/himanshu231204/auto-eda-toolkit",
+        "Documentation": "https://github.com/himanshu231204/auto-eda-toolkit#readme",
     },
     
     # Package configuration

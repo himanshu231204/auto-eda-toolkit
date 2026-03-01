@@ -1,7 +1,6 @@
 # 🚀 Auto EDA Toolkit - Complete Usage Guide
 
 
-
 ## 📚 Table of Contents
 
 1. [Installation](#installation)
@@ -19,7 +18,7 @@
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/auto-eda-toolkit.git
+git clone https://github.com/himanshu231204/auto-eda-toolkit.git
 cd auto-eda-toolkit
 ```
 

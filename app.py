@@ -1,7 +1,3 @@
-"""
-Streamlit Web App for Auto EDA Toolkit
-Deploy this on Streamlit Cloud for web access!
-"""
 
 import streamlit as st
 import pandas as pd
@@ -421,13 +417,15 @@ else:
     # Footer
     st.markdown("---")
     st.markdown(
-        '<p style="text-align: center; color: #888;">Made with ❤️ | Auto EDA Toolkit v1.0</p>',
+        '<p style="text-align: center; color: #888;">Made with ❤️ (Himanshu Kumar) | Auto EDA Toolkit v1.0</p>',
         unsafe_allow_html=True
     )
 
 # Sidebar footer
 st.sidebar.markdown("---")
 st.sidebar.markdown("### 📚 Resources")
-st.sidebar.markdown("[GitHub Repo](https://github.com/your-repo)")
-st.sidebar.markdown("[Documentation](https://github.com/your-repo)")
-st.sidebar.markdown("[Report Issues](https://github.com/your-repo/issues)")
+st.sidebar.markdown("[GitHub Repo](https://github.com/himanshu231204/auto-eda-toolkit)")
+st.sidebar.markdown("[Documentation](https://github.com/himanshu231204/auto-eda-toolkit#readme)")
+st.sidebar.markdown("[Report Issues](https://github.com/himanshu231204/auto-eda-toolkit/issues)")
+
+
