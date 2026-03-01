@@ -420,6 +420,20 @@ else:
         '<p style="text-align: center; color: #888;">Made with ❤️ (Himanshu Kumar) | Auto EDA Toolkit v1.0</p>',
         unsafe_allow_html=True
     )
+    
+    st.divider()
+
+st.markdown(
+    """
+    <div style="text-align:center; font-size:14px;">
+        👨‍💻 Developed by <b>Himanshu Kumar</b><br><br>
+        🔗 
+        <a href="https://www.linkedin.com/in/himanshu231204" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/himanshu231204" target="_blank">GitHub</a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 # Sidebar footer
 st.sidebar.markdown("---")

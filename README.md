@@ -235,6 +235,14 @@ sns.set_style("darkgrid")  # Change style
 plt.rcParams['figure.figsize'] = (15, 8)  # Change size
 ```
 
+# 🔗 Connect With Me
+
+- 💼 LinkedIn: https://www.linkedin.com/in/himanshu231204  
+- 🐙 GitHub: https://github.com/himanshu231204  
+- 🐦 Twitter/X: https://twitter.com/himanshu231204  
+- ☕ Buy Me a Coffee: https://www.buymeacoffee.com/himanshu231204  
+
+
 ## 🤝 Contributing
 
 Contributions welcome! Feel free to:
