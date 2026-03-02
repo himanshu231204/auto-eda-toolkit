@@ -4,7 +4,13 @@ Tests the toolkit with synthetic data
 """
 
 import sys
-sys.path.append('./src')
+import os
+import tempfile
+
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
+
+import matplotlib
+matplotlib.use('Agg')
 
 from eda_engine import AutoEDA
 import pandas as pd
@@ -47,57 +53,38 @@ def create_sample_dataset():
 
 def test_classification():
     """Test with classification dataset"""
-    print("\n" + "="*80)
-    print("TEST 1: CLASSIFICATION TASK")
-    print("="*80 + "\n")
-    
     df = create_sample_dataset()
-    df.to_csv('examples/sample_classification.csv', index=False)
-    print("✅ Sample dataset created: examples/sample_classification.csv\n")
     
     eda = AutoEDA(df, target_col='loan_approved')
     report = eda.run_complete_eda()
     
-    print("\n✅ Classification test completed successfully!\n")
-    return report
+    assert report is not None
+    assert 'column_types' in report
 
 
 def test_regression():
     """Test with regression dataset"""
-    print("\n" + "="*80)
-    print("TEST 2: REGRESSION TASK")
-    print("="*80 + "\n")
-    
     df = create_sample_dataset()
     df['house_price'] = (df['income'] * 4 + 
                          df['credit_score'] * 500 + 
                          np.random.normal(0, 50000, len(df)))
     
-    df.to_csv('examples/sample_regression.csv', index=False)
-    print("✅ Sample dataset created: examples/sample_regression.csv\n")
-    
     eda = AutoEDA(df, target_col='house_price')
     report = eda.run_complete_eda()
     
-    print("\n✅ Regression test completed successfully!\n")
-    return report
+    assert report is not None
+    assert 'column_types' in report
 
 
 def test_no_target():
     """Test without target variable"""
-    print("\n" + "="*80)
-    print("TEST 3: NO TARGET (EXPLORATORY ANALYSIS)")
-    print("="*80 + "\n")
-    
     df = create_sample_dataset()
-    df.to_csv('examples/sample_exploratory.csv', index=False)
-    print("✅ Sample dataset created: examples/sample_exploratory.csv\n")
     
     eda = AutoEDA(df)
     report = eda.run_complete_eda()
     
-    print("\n✅ Exploratory analysis test completed successfully!\n")
-    return report
+    assert report is not None
+    assert 'column_types' in report
 
 
 if __name__ == "__main__":
